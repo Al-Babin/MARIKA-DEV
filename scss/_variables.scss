@@ -1,0 +1,21 @@
+//Colors
+$first: #040916;
+$second: rgba(#88E4F5, 100%); 
+$third: white;
+$bg-color: $first;
+$text-color: #E6F3F3;
+$gradient: linear-gradient(180deg, #030511 0%, #030c1e 80%, #05112aa3 100%);
+
+//Font name
+$font-family: "Proxima Nova";
+
+// Viewport
+
+$mobile-only: 767px;
+$tablet: 768px;
+$netbooks: 1024px;
+$desktop: 1440px;
+$header-break: 497px;
+
+// dot-size
+$dot-size: 15px;

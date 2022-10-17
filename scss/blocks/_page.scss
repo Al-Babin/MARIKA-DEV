@@ -1,0 +1,44 @@
+.page{
+    height: 100%;
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+.page__body{
+    min-height: 100%;
+    margin:0;
+    background-color: $first;
+    color: #fff;
+    
+    @media (min-width:$tablet) {
+        // padding: 0 50px;
+    }
+    @media (min-width:$desktop) {
+        // max-width: 1249px;
+        // margin: auto;
+        // margin-top: 39px;
+    }
+}
+
+.page__body.lock {
+    overflow: hidden;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 5px; /* высота для горизонтального скролла */
+    background-color: #242e47;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: $second;
+    border-radius: 10px;
+    border: 2px solid #242e47;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(#88E4F5, 70%);;
+}

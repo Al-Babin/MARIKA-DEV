@@ -1,0 +1,92 @@
+.tracks {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+    @media (min-width:$desktop) {
+        padding-bottom: 100px;
+    }
+}
+
+.tracks__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:$netbooks) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "text track-list"
+        "button button";
+        column-gap: 60px;
+        row-gap: 58px;
+    }
+}
+
+// .tracks__title {
+//     margin-bottom: 30px;
+
+//     @media (min-width:$netbooks) {
+//         margin-bottom: 58px;  
+//     }
+// }
+
+.tracks__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 41px;
+    gap: 10px;
+    grid-area: text;
+    text-align: center;
+
+    @media (min-width:$netbooks) {
+        margin-bottom: 0;
+        gap: 20px;
+        align-self: flex-start;
+        text-align: start;
+    }
+}
+
+.tracks__box {
+    width: 100%;
+    height: 114px;
+    margin-bottom: 30px;
+    border: 1px solid $second;
+    border-radius: 3px;
+    max-width: 100%;
+    overflow-y: auto;
+    grid-area: track-list;
+
+    @media (min-width:$tablet) {
+        max-width: 80%;
+    }
+    @media (min-width:$netbooks) {
+        max-width: 100%;
+        height: 160px;
+        align-self: center;
+        margin-bottom: 0;
+    }
+}
+
+.tracks__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.button.tracks__button {
+    grid-area: button;
+    @media (max-width:$mobile-only) {
+        font-size: 14px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    @media (min-width:$netbooks) {
+        justify-self: center;
+    }
+}

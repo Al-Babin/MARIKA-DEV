@@ -1,0 +1,45 @@
+.page-main {
+    @media (max-width:$mobile-only) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.title {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (min-width:$tablet) {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    @media (min-width:$netbooks) {
+        font-size: 38px;
+        margin-bottom: 56px;
+    }
+
+    @media (min-width:$desktop) {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+}
+
+.offer-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $text-color;
+    margin: 0;
+
+    @media (min-width:$netbooks) {
+        font-size: 18px;
+    }
+    @media (min-width:1920px) {
+        font-size: 20px;
+    }
+}

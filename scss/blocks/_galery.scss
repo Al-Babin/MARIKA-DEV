@@ -1,0 +1,38 @@
+.galery {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-bottom: 100px;
+    }
+
+}
+
+// .galery__title {
+//     margin-bottom: 35px;
+
+//     @media (min-width: $tablet) {
+//         margin-bottom: 45px;
+//     }
+// }
+
+.photo-list {
+    // display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.photo-list__item {
+    list-style: none;
+}
+
+.photo-list__img {
+    width: 100%;
+    height: auto;
+}

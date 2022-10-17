@@ -1,0 +1,87 @@
+.button{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding: 15px 20px;
+    color: $second;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $second;
+        color: $first;
+        box-shadow: 0 0 50px $second;
+        transition-delay: 0.5s;
+    }
+    &:active {
+        background-color: $second;
+        color: $first;
+        box-shadow: 0 0 50px $second;
+    }
+}
+
+.button--reflected {
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid $second;
+    border-left: 2px solid $second;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.button:hover:before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid $second;
+    border-right: 2px solid $second;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.button:hover:after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+@media (max-width: $tablet) {
+    .bound-button {
+        border: 1px solid $second;
+    }
+
+    .bound-button.button::after {
+        display: none;
+    }
+
+.bound-button.button::before {
+        display: none;
+    }  
+}
+

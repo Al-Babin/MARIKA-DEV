@@ -1,0 +1,65 @@
+/* Слайдер */
+.benefits__list .slick-slider{
+    min-width: 0;
+}
+/* Ограничивающая оболочка */
+.benefits__list .slick-list {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+/* Лента слайдов */
+.benefits__list .slick-track{
+    display: flex;
+}
+/* Слайд */
+.benefits__list .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+/* Точки (булиты) */
+.benefits__list .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+.benefits__list .slick-dots li{
+    list-style: none;
+}
+
+/* Элемент точки */
+.benefits__list .slick-dots li button{
+    font-size: 0;
+    background-color: transparent;
+    border: 1px solid $second;
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.benefits__list .slick-dots li button::before{
+    content: "";
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    background-color: $second;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+}
+
+/* Активная точка */
+.benefits__list .slick-dots li.slick-active button::before {
+    opacity: 100%;
+}
