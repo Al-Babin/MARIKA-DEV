@@ -13,7 +13,7 @@
     
     @media (max-width:$mobile-only) {
         height: 405px;
-        background-image: url(/img/bg-mobile.jpeg);
+        background-image: url(../img/bg-mobile.jpeg);
         background-repeat: no-repeat;
         background-position: top center;
         background-size: contain;
@@ -26,7 +26,7 @@
 
     @media (min-width:$tablet) {
         min-height: 100vh;
-        background-image: url(/img/bg-mobile.jpeg);
+        background-image: url(../img/bg-mobile.jpeg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -35,7 +35,7 @@
     @media (min-width:1024px) {
         background-size: cover;
         min-height: 100vh;
-        background-image: url(/img/bg-desctop.jpg);
+        background-image: url(../img/bg-desctop.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         // animation: bg-animation 15s ease;

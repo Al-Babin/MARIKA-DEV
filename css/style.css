@@ -103,7 +103,7 @@
 @media (max-width: 767px) {
   .page-header__background {
     height: 405px;
-    background-image: url(/img/bg-mobile.jpeg);
+    background-image: url(../img/bg-mobile.jpeg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -118,7 +118,7 @@
 @media (min-width: 768px) {
   .page-header__background {
     min-height: 100vh;
-    background-image: url(/img/bg-mobile.jpeg);
+    background-image: url(../img/bg-mobile.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -128,7 +128,7 @@
   .page-header__background {
     background-size: cover;
     min-height: 100vh;
-    background-image: url(/img/bg-desctop.jpg);
+    background-image: url(../img/bg-desctop.jpg);
     background-repeat: no-repeat;
     background-position: center center;
   }
